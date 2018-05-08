@@ -1,0 +1,107 @@
+EESchema Schematic File Version 4
+LIBS:inverter-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NMOS_GSD N1
+U 1 1 5AEFF8F6
+P 4500 2700
+AR Path="/5AF21754/5AEFF8F6" Ref="N1"  Part="1" 
+AR Path="/5AF2123E/5AEFF8F6" Ref="N2"  Part="1" 
+AR Path="/5AF2257C/5AF2123E/5AEFF8F6" Ref="N2"  Part="1" 
+AR Path="/5AF22AE7/5AEFF8F6" Ref="N1"  Part="1" 
+F 0 "N1" H 4706 2746 50  0000 L CNN
+F 1 "N" H 4706 2655 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:TSOT-23" H 4700 2800 50  0001 C CNN
+F 3 "~" H 4500 2700 50  0001 C CNN
+	1    4500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD P1
+U 1 1 5AEFFAFC
+P 4500 1900
+AR Path="/5AF21754/5AEFFAFC" Ref="P1"  Part="1" 
+AR Path="/5AF2123E/5AEFFAFC" Ref="P2"  Part="1" 
+AR Path="/5AF2257C/5AF2123E/5AEFFAFC" Ref="P2"  Part="1" 
+AR Path="/5AF22AE7/5AEFFAFC" Ref="P1"  Part="1" 
+F 0 "P1" H 4706 1946 50  0000 L CNN
+F 1 "P" H 4706 1855 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:TSOT-23" H 4700 2000 50  0001 C CNN
+F 3 "~" H 4500 1900 50  0001 C CNN
+	1    4500 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2100 4950 2100
+Wire Wire Line
+	4950 2100 4950 2300
+Wire Wire Line
+	4950 2300 5250 2300
+Wire Wire Line
+	4600 2500 4950 2500
+Wire Wire Line
+	4950 2500 4950 2300
+Connection ~ 4950 2300
+Wire Wire Line
+	4600 1700 4600 1450
+Wire Wire Line
+	4600 3150 4600 2900
+Wire Wire Line
+	4300 1900 4100 1900
+Wire Wire Line
+	4100 1900 4100 2300
+Wire Wire Line
+	4100 2300 3700 2300
+Wire Wire Line
+	4100 2300 4100 2700
+Wire Wire Line
+	4100 2700 4300 2700
+Connection ~ 4100 2300
+$Comp
+L power:VDD #PWR0105
+U 1 1 5AF21464
+P 4600 1450
+AR Path="/5AF21754/5AF21464" Ref="#PWR0105"  Part="1" 
+AR Path="/5AF2123E/5AF21464" Ref="#PWR0103"  Part="1" 
+AR Path="/5AF2257C/5AF2123E/5AF21464" Ref="#PWR0103"  Part="1" 
+AR Path="/5AF22AE7/5AF21464" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 4600 1300 50  0001 C CNN
+F 1 "VDD" H 4617 1623 50  0000 C CNN
+F 2 "" H 4600 1450 50  0001 C CNN
+F 3 "" H 4600 1450 50  0001 C CNN
+	1    4600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VSS #PWR0106
+U 1 1 5AF21551
+P 4600 3150
+AR Path="/5AF21754/5AF21551" Ref="#PWR0106"  Part="1" 
+AR Path="/5AF2123E/5AF21551" Ref="#PWR0104"  Part="1" 
+AR Path="/5AF2257C/5AF2123E/5AF21551" Ref="#PWR0104"  Part="1" 
+AR Path="/5AF22AE7/5AF21551" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 4600 3000 50  0001 C CNN
+F 1 "VSS" H 4618 3323 50  0000 C CNN
+F 2 "" H 4600 3150 50  0001 C CNN
+F 3 "" H 4600 3150 50  0001 C CNN
+	1    4600 3150
+	-1   0    0    1   
+$EndComp
+Text HLabel 3700 2300 0    50   Input ~ 0
+in
+Text HLabel 5250 2300 2    50   Output ~ 0
+out
+$EndSCHEMATC
