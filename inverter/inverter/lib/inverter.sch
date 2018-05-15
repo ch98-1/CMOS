@@ -42,7 +42,7 @@ F 1 "P" H 4706 1855 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:TSOT-23" H 4700 2000 50  0001 C CNN
 F 3 "~" H 4500 1900 50  0001 C CNN
 	1    4500 1900
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	4600 2100 4950 2100
